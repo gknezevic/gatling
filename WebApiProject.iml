@@ -10,7 +10,6 @@
         <sourceRoots>
           <root url="file://$MODULE_DIR$/src/main/java" />
           <root url="file://$MODULE_DIR$/src/main/resources" />
-          <root url="file://$MODULE_DIR$/src/main/scala" />
         </sourceRoots>
       </configuration>
     </facet>
@@ -35,12 +34,6 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.10.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.10.0" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: javax.annotation:javax.annotation-api:1.3.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.yaml:snakeyaml:1.19" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:2.0.5.RELEASE" level="project" />
@@ -85,7 +78,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:1.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.ow2.asm:asm:5.0.4" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.gatling.highcharts:gatling-charts-highcharts:3.0.0-RC3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.scala-lang:scala-library:2.12.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.gatling:gatling-charts:3.0.0-RC3" level="project" />
@@ -99,6 +92,8 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.softwaremill.quicklens:quicklens_2.12:1.4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.eatthepath:fast-uuid:0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.typesafe.scala-logging:scala-logging_2.12:3.9.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.typesafe.akka:akka-slf4j_2.12:2.5.17" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.simpleflatmapper:lightning-csv:5.0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.simpleflatmapper:sfm-util:5.0.1" level="project" />
@@ -155,31 +150,5 @@
     <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-transport:4.1.29.Final" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.typesafe.akka:akka-actor_2.12:2.5.17" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.typesafe:config:1.3.3" level="project" />
-    <orderEntry type="library" name="Maven: io.gatling:gatling-maven-plugin:maven-plugin:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-exec:1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:3.1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-compat:3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-model:3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-model-builder:3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-settings:3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-artifact:3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-core:3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-settings-builder:3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-repository-metadata:3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-api:3.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.maven:maven-aether-provider:3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.sonatype.aether:aether-impl:1.7" level="project" />
-    <orderEntry type="library" name="Maven: org.sonatype.aether:aether-spi:1.7" level="project" />
-    <orderEntry type="library" name="Maven: org.sonatype.aether:aether-api:1.7" level="project" />
-    <orderEntry type="library" name="Maven: org.sonatype.aether:aether-util:1.7" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-classworlds:2.2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.sonatype.plexus:plexus-sec-dispatcher:1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.sonatype.plexus:plexus-cipher:1.4" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-interpolation:1.14" level="project" />
-    <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-inject-plexus:1.4.2" level="project" />
-    <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-inject-bean:1.4.2" level="project" />
-    <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-guice:noaop:2.1.7" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.maven.wagon:wagon-provider-api:1.0-beta-6" level="project" />
   </component>
 </module>
