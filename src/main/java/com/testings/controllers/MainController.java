@@ -1,10 +1,12 @@
 package com.testings.controllers;
 
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/rest/strings")
@@ -23,10 +25,9 @@ public class MainController {
     }
 
     @PostMapping
-    public List<String> setListOfSomeStrings(@RequestParam String param) {
-        System.out.println("Request: " + param);
+    public List<String> setListOfSomeStrings(@RequestBody Map<String, String> params) {
         strings = new ArrayList<>();
-        strings.add(param);
+        strings.add(params.getOrDefault("input", ""));
         return strings;
     }
 

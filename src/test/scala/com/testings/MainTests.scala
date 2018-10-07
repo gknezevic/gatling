@@ -19,6 +19,7 @@ class MainTests extends Simulation {
   val postScn = scenario("Post new stuff")
     .exec(http("Post request")
       .post("/strings")
+      .body(RawFileBody("input.json")).asJson
       .check(status.find.in(200)))
     .pause(5)
 
